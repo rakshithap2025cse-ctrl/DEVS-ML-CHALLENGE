@@ -1,4 +1,4 @@
-# MODEL ARENA — Track 2: Steel Plant Energy Consumption Forecasting
+# Track 2: Steel Plant Energy Consumption Forecasting
 
 Forecast electricity usage (kWh) for the **next 15-minute interval** (`next_interval_Usage_kWh`) from current and past plant telemetry.
 Metrics (per the problem statement): **RMSE** and **MAE**, on a later chronological period.
@@ -28,10 +28,13 @@ Python 3.10+, pandas, numpy, scikit-learn, lightgbm, joblib (+ matplotlib, xgboo
 | `inference.py` | `predict(df)` → one prediction per row, same order |
 | `test_pipeline.py` | 8 end-to-end checks (see below) |
 | `model.joblib` | Saved pipeline (imputer + LightGBM), feature list, last 200 training rows as past context |
-| `validation_metrics.json`, `results/` | Numbers quoted in the write-ups |
-| `methodology_summary.md` | 1–2 page summary for the organisers |
+| `validation_metrics.json`, `results_*.csv` | Numbers quoted in the write-ups (model comparison, feature sets, permutation importance) |
+| `*.png` | Charts from the notebooks (target distribution, consumption patterns, validation forecast, feature importance) |
+| `methodology_summary.md` / `methodology_summary.pdf` | 2-page report (same content, Markdown and PDF) |
 
 ## Setup and run
+
+Put the original `train.csv` in the same folder as the scripts first (it is not stored in this repo; `train_cleaned.csv` is the cleaned copy).
 
 ```bash
 pip install -r requirements.txt
