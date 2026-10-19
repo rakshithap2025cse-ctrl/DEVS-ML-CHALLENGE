@@ -1,0 +1,16 @@
+model,features,val_RMSE,val_MAE,train_RMSE,train_MAE,seconds
+Persistence (Usage_t),-,11.945,5.277,,,0.0
+Seasonal naive: same slot yesterday,-,26.689,13.813,,,0.0
+Seasonal naive: same slot last week,-,23.578,12.193,,,0.0
+Ridge,raw,11.455,6.361,14.088,7.849,0.1
+RandomForest,raw,8.876,4.05,6.322,2.969,13.5
+ExtraTrees,raw,8.961,4.125,6.314,3.021,7.1
+HistGradientBoosting,raw,8.634,3.989,9.299,4.619,0.4
+LightGBM,raw,8.652,3.969,8.609,4.297,0.9
+XGBoost,raw,8.753,4.108,9.03,4.529,0.6
+Ridge,engineered (32),10.347,5.804,12.635,7.356,0.1
+RandomForest,engineered (32),8.411,3.869,5.01,2.31,49.9
+ExtraTrees,engineered (32),8.483,3.923,3.858,1.754,15.4
+HistGradientBoosting,engineered (32),8.346,3.985,8.563,4.366,0.4
+LightGBM,engineered (32),8.264,3.873,6.942,3.583,1.3
+XGBoost,engineered (32),8.295,3.95,7.522,3.897,1.2
