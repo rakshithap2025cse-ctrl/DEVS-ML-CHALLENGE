@@ -30,7 +30,6 @@ Python 3.10+, pandas, numpy, scikit-learn, lightgbm, joblib (+ matplotlib, xgboo
 | `model.joblib` | Saved pipeline (imputer + LightGBM), feature list, last 200 training rows as past context |
 | `validation_metrics.json`, `results/` | Numbers quoted in the write-ups |
 | `methodology_summary.md` | 1–2 page summary for the organisers |
-| `JUDGE_GUIDE.md` | Personal preparation guide for the judging round |
 
 ## Setup and run
 
